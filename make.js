@@ -174,7 +174,7 @@ command(
 
 if (process.argv.includes("-h") || process.argv.includes("--help") || process.argv.length == 2) {
   printHelpString();
-  return;
+  process.exit(0);
 }
 
 commandArg = process.argv[2]
